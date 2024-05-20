@@ -35,4 +35,8 @@ return {
     'rose-pine/neovim',
     name = 'rose-pine',
   },
+  {
+    'tomasiser/vim-code-dark',
+    name = 'codedark',
+  },
 }
