@@ -101,7 +101,7 @@ require 'options'
 require 'keymaps'
 
 -- [[ Filetype Specific Keymaps ]]
-require 'after.ftplugin.python'
+-- require 'after.ftplugin.python'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -809,7 +809,7 @@ require('lazy').setup({
 })
 
 -- Override default colorscheme to rose-pine
-require 'after.colorscheme'
+-- require 'after.colorscheme'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
