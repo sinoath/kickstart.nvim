@@ -47,3 +47,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- emmet leader key
+vim.g.user_emmet_leader_key = '<C-M>'
