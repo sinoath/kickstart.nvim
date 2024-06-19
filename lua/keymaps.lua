@@ -49,4 +49,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- emmet leader key
-vim.g.user_emmet_leader_key = '<C-M>'
+vim.g.user_emmet_leader_key = '<leader>,'
