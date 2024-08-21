@@ -176,7 +176,17 @@ require('lazy').setup({
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     config = function() -- This is the function that runs, AFTER loading
-      require('which-key').setup()
+      require('which-key').setup {
+        window = {
+          padding = { 1, 0, 1, 0 },
+          margin = { 0, 0, 0, 20 },
+        },
+        layout = {
+          height = { min = 10, max = 50 },
+          width = { min = 20, max = 50 },
+          align = 'center',
+        },
+      }
 
       -- Document existing key chains
       require('which-key').register {
