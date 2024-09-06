@@ -9,6 +9,10 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Set interactive bash, to enable the use of aliases
+-- vim.cmd = { "shell='/bin/bash -i'" }
+vim.opt.shell = '/bin/bash -i'
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -44,6 +48,9 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Setting options for nvim diff mode
+vim.opt.diffopt = 'internal,closeoff,vertical,filler'
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
@@ -57,7 +64,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 6
+vim.opt.scrolloff = 4
 
 -- Setting tabstop options
 vim.opt.smarttab = true
