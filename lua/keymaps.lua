@@ -53,6 +53,3 @@ vim.keymap.set('n', '\\', '<cmd>Neotree reveal toggle<cr>', { desc = 'Toggle on/
 
 -- emmet leader key
 vim.g.user_emmet_leader_key = '<A-m>'
-
--- Gitsigns
--- vim.keymap.set('n', '<leader>n', require('gitsigns').preview_hunk)
