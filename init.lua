@@ -806,8 +806,14 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  { import = 'custom.plugins' },
-  { import = 'custom.colorschemes' },
+  -- { import = 'custom.plugins' },
+  require 'custom.plugins.emmet',
+  require 'custom.plugins.surround',
+  require 'custom.plugins.fugitive',
+  require 'custom.plugins.vim-repeat',
+  require 'custom.plugins.indent_object',
+  require 'custom.plugins.vim-tmux-navigator',
+  require 'custom.colorschemes',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
