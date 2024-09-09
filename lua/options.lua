@@ -10,7 +10,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Set interactive bash, to enable the use of aliases
--- vim.cmd = { "shell='/bin/bash -i'" }
 vim.opt.shell = '/bin/bash -i'
 
 -- Enable mouse mode, can be useful for resizing splits for example!
