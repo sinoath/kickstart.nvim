@@ -48,5 +48,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Neotree toggle
+vim.keymap.set('n', '\\', '<cmd>Neotree reveal toggle<cr>', { desc = 'Toggle on/off the Neotree window' })
+
 -- emmet leader key
 vim.g.user_emmet_leader_key = '<A-m>'
