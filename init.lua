@@ -191,6 +191,7 @@ require('lazy').setup({
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
+        { '<leader>x', group = 'E[x]ecute' },
         { '<leader>h', group = 'Git [H]unk', mode = 'n', 'v' },
       }
       -- require('which-key').register {
@@ -504,7 +505,11 @@ require('lazy').setup({
                 callSnippet = 'Replace',
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-              -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = {
+                disable = { 'missing-fields' },
+                -- Disable warning for 'global vim undefined'
+                global = { 'vim' },
+              },
             },
           },
         },
