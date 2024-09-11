@@ -508,7 +508,7 @@ require('lazy').setup({
               diagnostics = {
                 disable = { 'missing-fields' },
                 -- Disable warning for 'global vim undefined'
-                global = { 'vim' },
+                globals = { 'vim' },
               },
             },
           },
