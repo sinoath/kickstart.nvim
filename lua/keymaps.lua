@@ -53,3 +53,9 @@ vim.keymap.set('n', '\\', '<cmd>Neotree reveal toggle<cr>', { desc = 'Toggle on/
 
 -- emmet leader key
 vim.g.user_emmet_leader_key = '<A-m>'
+
+-- Git diff shortcuts
+vim.keymap.set('n', '<leader>hc', 'do', { desc = 'diffget the changes from the other file' })
+vim.keymap.set('n', '<leader>hh', 'd2o', { desc = 'diffget the changes from the left file' })
+vim.keymap.set('n', '<leader>hl', 'd3o', { desc = 'diffget the changes from the right file' })
+vim.keymap.set('n', '<leader>ht', 'dp', { desc = 'diffput the changes to the other file' })
