@@ -1,6 +1,9 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Set in 'jk' in insert mode to ESC key
+vim.keymap.set('i', 'jk', '<ESC>')
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
