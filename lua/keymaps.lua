@@ -19,6 +19,8 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+-- Map <ESC> to 'jk' in insert mode:
+vim.keymap.set('i', 'jk', '<ESC>', { desc = 'Set "jk" as ESC in insert mode'})
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 -- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
@@ -53,3 +55,9 @@ vim.keymap.set('n', '\\', '<cmd>Neotree reveal toggle<cr>', { desc = 'Toggle on/
 
 -- emmet leader key
 vim.g.user_emmet_leader_key = '<A-m>'
+
+-- Git diff shortcuts
+vim.keymap.set('n', '<leader>hc', '<cmd>diffget<CR>', { desc = 'diffget the changes from the other file' })
+vim.keymap.set('n', '<leader>hh', '<cmd>diffget //2<CR>', { desc = 'diffget the changes from the left file' })
+vim.keymap.set('n', '<leader>hl', '<cmd>diffget //3<CR>', { desc = 'diffget the changes from the right file' })
+vim.keymap.set('n', '<leader>ht', '<cmd>diffput<CR>', { desc = 'diffput the changes to the other file' })
