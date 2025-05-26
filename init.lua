@@ -192,7 +192,7 @@ require('lazy').setup({
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>x', group = 'E[x]ecute' },
-        { '<leader>h', group = 'Git [H]unk', mode = 'n', 'v' },
+        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       }
       -- require('which-key').register {
       --   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
