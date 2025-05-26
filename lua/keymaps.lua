@@ -4,6 +4,12 @@
 -- Set in 'jk' in insert mode to ESC key
 vim.keymap.set('i', 'jk', '<ESC>')
 
+-- Set yank and paste to and from the b register
+vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "y" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>T', '"bd', { desc = 'dele[T]e in the "y" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>p', '"bp', { desc = '[p]aste after, from the "y" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>P', '"bP', { desc = '[P]aste before, from the "y" register' })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
