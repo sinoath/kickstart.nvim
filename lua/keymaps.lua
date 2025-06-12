@@ -4,6 +4,9 @@
 -- Set in 'jk' in insert mode to ESC key
 vim.keymap.set('i', 'jk', '<ESC>')
 
+-- Save a file
+vim.keymap.set('n', '<leader>a', '<cmd>w<CR>', { silent = true })
+
 -- Set yank and paste to and from the b register
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "y" register' })
 vim.keymap.set({ 'n', 'v' }, '<leader>T', '"bd', { desc = 'dele[T]e in the "y" register' })
