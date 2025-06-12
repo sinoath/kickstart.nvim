@@ -8,10 +8,10 @@ vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<leader>a', '<cmd>w<CR>', { silent = true })
 
 -- Set yank and paste to and from the b register
-vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "y" register' })
-vim.keymap.set({ 'n', 'v' }, '<leader>T', '"bd', { desc = 'dele[T]e in the "y" register' })
-vim.keymap.set({ 'n', 'v' }, '<leader>p', '"bp', { desc = '[p]aste after, from the "y" register' })
-vim.keymap.set({ 'n', 'v' }, '<leader>P', '"bP', { desc = '[P]aste before, from the "y" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>T', '"bd', { desc = 'dele[T]e in the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>p', '"bp', { desc = '[p]aste after, from the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>P', '"bP', { desc = '[P]aste before, from the "b" register' })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
