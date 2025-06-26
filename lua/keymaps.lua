@@ -1,6 +1,18 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Map <ESC> to 'jk' in insert mode:
+vim.keymap.set('i', 'jk', '<ESC>', { desc = 'Set "jk" as ESC in insert mode' })
+
+-- Save a file
+vim.keymap.set('n', '<leader>a', '<cmd>w<CR>', { desc = 'S[a]ve current buffer', silent = true })
+
+-- Set yank and paste to and from the b register
+vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>T', '"bd', { desc = 'cu[T] in the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>p', '"bp', { desc = '[p]aste after, from the "b" register' })
+vim.keymap.set({ 'n', 'v' }, '<leader>P', '"bP', { desc = '[P]aste before, from the "b" register' })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
