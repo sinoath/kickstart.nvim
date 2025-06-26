@@ -5,7 +5,7 @@
 vim.keymap.set('i', 'jk', '<ESC>')
 
 -- Save a file
-vim.keymap.set('n', '<leader>a', '<cmd>w<CR>', { silent = true })
+vim.keymap.set('n', '<leader>a', '<cmd>w<CR>', { desc = 'S[a]ve current buffer', silent = true })
 
 -- Set yank and paste to and from the b register
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"by', { desc = '[Y]ank in the "b" register' })
