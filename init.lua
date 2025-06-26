@@ -194,6 +194,9 @@ require('lazy').setup({
         { '<leader>u', group = 'Doc[u]ment' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>x', group = 'E[x]ecute' },
+        { '<leader>y', hidden = true },
+        { '<leader>p', hidden = true },
+        { '<leader>P', hidden = true },
       }
       -- require('which-key').register {
       --   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
