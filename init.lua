@@ -497,6 +497,9 @@ require('lazy').setup({
           -- capabilities = {},
           settings = {
             Lua = {
+              runtime = {
+                version = 'LuaJIT',
+              },
               completion = {
                 callSnippet = 'Replace',
               },
@@ -505,6 +508,9 @@ require('lazy').setup({
                 disable = { 'missing-fields' },
                 -- Disable warning for 'global vim undefined'
                 global = { 'vim' },
+              },
+              workspace = {
+                library = { vim.env.VIMRUNTIME },
               },
             },
           },
