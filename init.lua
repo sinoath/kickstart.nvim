@@ -842,7 +842,7 @@ require('lazy').setup({
   },
 })
 
--- Override default colorscheme to rose-pine
+-- Override default colorscheme to catppuccin-mocha
 require 'after.colorscheme'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
