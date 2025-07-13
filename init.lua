@@ -191,13 +191,17 @@ require('lazy').setup({
       -- Document existing key chains
       require('which-key').add {
         { '<leader>c', group = '[C]ode' },
-        { '<leader>d', group = '[D]ocument' },
+        { '<leader>d', group = '[D]ebugging' },
+        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
-        { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
+        { '<leader>u', group = 'Doc[u]ment' },
+        { '<leader>w', group = '[W]orkspace' },
         { '<leader>x', group = 'E[x]ecute' },
-        { '<leader>h', group = 'Git [H]unk', mode = 'n', 'v' },
+        { '<leader>y', hidden = true },
+        { '<leader>p', hidden = true },
+        { '<leader>P', hidden = true },
       }
     end,
   },
