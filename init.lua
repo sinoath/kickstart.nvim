@@ -814,6 +814,9 @@ require('lazy').setup({
   require 'custom.plugins.fugitive',
   require 'custom.plugins.vim-repeat',
   require 'custom.plugins.indent_object',
+  require 'custom.plugins.nvim-dap',
+  require 'custom.plugins.nvim-dap-python',
+  require 'custom.plugins.nvim-dap-ui',
   require 'custom.colorschemes',
   -- { import = 'custom.colorschemes' },
 }, {
