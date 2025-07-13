@@ -124,6 +124,9 @@ vim.opt.rtp:prepend(lazypath)
 --  To update plugins you can run
 --    :Lazy update
 --
+-- Globally disable Lua diagnostic for 'missing-fields'
+---@diagnostic disable: missing-fields
+--
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
