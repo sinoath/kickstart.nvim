@@ -851,6 +851,7 @@ require('lazy').setup({
   require 'custom.plugins.nvim-dap',
   require 'custom.plugins.nvim-dap-python',
   require 'custom.plugins.nvim-dap-ui',
+  require 'custom.plugins.render-markdown',
   require 'custom.colorschemes',
 }, {
   ui = {
