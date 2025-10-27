@@ -55,7 +55,27 @@ return {
     priority = 1000,
     init = function()
       require('catppuccin').setup {
-        no_italic = true,
+        transparent_background = true,
+        float = {
+          transparent = true,
+          solid = false,
+        },
+        no_italic = false,
+        styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+          comments = { 'italic' }, -- Change the style of comments
+          conditionals = {},
+          loops = {},
+          functions = {},
+          keywords = {},
+          strings = {},
+          variables = {},
+          numbers = {},
+          booleans = {},
+          properties = {},
+          types = {},
+          operators = {},
+          -- miscs = {}, -- Uncomment to turn off hard-coded styles
+        },
       }
     end,
   },
