@@ -37,7 +37,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 
 -- Folding options
-vim.o.foldcolumn = '1'
+vim.o.foldcolumn = 'auto:3'
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
