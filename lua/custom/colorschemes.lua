@@ -84,12 +84,24 @@ return {
     'rose-pine/neovim',
     name = 'rose-pine',
     priority = 1000,
+
     init = function()
       require('rose-pine').setup {
+        variant = 'moon',
+
+        --[[ enable = {
+          legacy_highlights = true,
+          migration = true,
+        }, ]]
+
         styles = {
-          bold = false,
-          italic = false,
-          transparency = false,
+          bold = true,
+          italic = true,
+          transparency = true,
+        },
+
+        highlight_groups = {
+          ['@string.special.url'] = { fg = 'rose', underline = true },
         },
       }
     end,
