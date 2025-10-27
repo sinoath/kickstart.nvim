@@ -10,7 +10,7 @@ return {
         italic = {
           strings = false,
           emphasis = false,
-          comments = false,
+          comments = true,
           operators = false,
           folds = false,
         },
@@ -33,7 +33,7 @@ return {
         style = 'night',
         transparent = true,
         styles = {
-          comments = { italic = false },
+          comments = { italic = true },
           keywords = { italic = false },
           functions = {},
           variables = {},
