@@ -853,6 +853,7 @@ require('lazy').setup({
   require 'custom.plugins.nvim-dap-ui',
   require 'custom.plugins.render-markdown',
   require 'custom.colorschemes',
+  require 'custom.plugins.smart-splits',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
