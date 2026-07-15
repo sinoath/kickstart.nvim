@@ -108,3 +108,8 @@ vim.keymap.set('n', '<leader>dh', '<cmd>Telescope dap commands<cr>', { desc = 'D
 vim.keymap.set('n', '<leader>de', function()
   require('telescope.builtin').diagnostics { default_text = ':E:' }
 end, { desc = 'Debugging: Telescope diagnostic' })
+
+-- Obsidian shortcuts
+vim.keymap.set('n', '<leader>os', '<cmd>ObsidianSearch<cr>', { desc = '[O]bsidian: [S]earch inside the vault' })
+vim.keymap.set('n', '<leader>ot', '<cmd>ObsidianTags<cr>', { desc = '[O]bsidian: [T]ags management' })
+vim.keymap.set('n', '<leader>ol', '<cmd>ObsidianLinks<cr>', { desc = '[O]bsidian: [L]inks of current file' })
