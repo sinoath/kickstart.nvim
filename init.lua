@@ -213,6 +213,7 @@ require('lazy').setup({
         { '<leader>t', group = '[T]oggle' },
         { '<leader>u', group = 'Doc[u]ment' },
         { '<leader>w', group = '[W]orkspace' },
+        { '<leader>o', group = '[O]bsidian', mode = { 'n', 'v' } },
         { '<leader>x', group = 'E[x]ecute' },
         { '<leader>y', hidden = true },
         { '<leader>p', hidden = true },
