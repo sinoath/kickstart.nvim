@@ -2,17 +2,29 @@ return {
   'epwalsh/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
   lazy = true,
-  -- ft = 'markdown',
+  ft = 'markdown',
+  cond = function()
+    local cwd = vim.fn.getcwd()
+    local root_vault = '/home/sinoath/Documents/Obsidian/'
+    -- Add new valut locations inside the table
+    local my_vaults = {
+      root_vault .. 'test',
+      root_vault .. 'myObsNotes',
+      root_vault .. 'study',
+      root_vault .. 'personal',
+    }
+    for _, v in ipairs(my_vaults) do
+      if cwd == v then
+        return true
+      end
+    end
+    return false
+  end,
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   event = {
     -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
     -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/*.md"
     -- refer to `:h file-pattern` for more examples
-    'BufReadPre /home/sinoath/Documents/Obsidian/test/*.md',
-    'BufNewFile /home/sinoath/Documents/Obsidian/test/*.md',
-    -- Copy the above two lines for every vault to be used
-    'BufReadPre /home/sinoath/Documents/Obsidian/myObsNotes/*.md',
-    'BufNewFile /home/sinoath/Documents/Obsidian/myObsNotes/*.md',
   },
   dependencies = {
     -- Required.
