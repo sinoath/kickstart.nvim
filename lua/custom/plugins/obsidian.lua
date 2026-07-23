@@ -52,6 +52,7 @@ return {
     notes_subdir = 'inbox',
     new_notes_location = 'notes_subdir',
     ui = { enable = false },
+    disable_frontmatter = true,
     templates = {
       folder = '$HOME/Documents/Obsidian/test/Templates/',
     },
