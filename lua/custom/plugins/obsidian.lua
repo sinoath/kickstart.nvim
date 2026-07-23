@@ -42,11 +42,11 @@ return {
       },
       {
         name = 'personal',
-        path = '',
+        path = '$HOME/Documents/Obsidian/study',
       },
       {
         name = 'study',
-        path = '',
+        path = '$HOME/Documents/Obsidian/personal',
       },
     },
     ui = { enable = false },
