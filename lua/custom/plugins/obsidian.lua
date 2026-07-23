@@ -49,6 +49,8 @@ return {
         path = '$HOME/Documents/Obsidian/personal',
       },
     },
+    notes_subdir = 'inbox',
+    new_notes_location = 'notes_subdir',
     ui = { enable = false },
     templates = {
       folder = '$HOME/Documents/Obsidian/test/Templates/',
