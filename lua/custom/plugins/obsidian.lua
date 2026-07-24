@@ -14,9 +14,7 @@ return {
       root_vault .. 'personal',
     }
     for _, v in ipairs(my_vaults) do
-      if cwd == v then
-        return true
-      end
+      return string.find(cwd, v)
     end
     return false
   end,
