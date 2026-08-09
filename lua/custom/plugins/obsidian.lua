@@ -53,6 +53,14 @@ return {
     disable_frontmatter = true,
     templates = {
       folder = '$HOME/Documents/Obsidian/test/Templates/',
+      substitutions = {
+        mydate = function()
+          return os.date '%Y%m%d'
+        end,
+        mytime = function()
+          return os.date '%H%M'
+        end,
+      },
     },
     -- Optional, customize how note IDs are generated given an optional title.
     ---@param title string|?
