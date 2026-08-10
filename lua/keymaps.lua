@@ -114,6 +114,7 @@ vim.keymap.set('n', '<leader>os', '<cmd>ObsidianSearch<cr>', { desc = '[O]bsidia
 vim.keymap.set('n', '<leader>og', '<cmd>ObsidianTags<cr>', { desc = '[O]bsidian: [T]ags management' })
 vim.keymap.set('n', '<leader>ol', '<cmd>ObsidianLinks<cr>', { desc = '[O]bsidian: [L]inks of current file' })
 vim.keymap.set('n', '<leader>ob', '<cmd>ObsidianBacklinks<cr>', { desc = '[O]bsidian: [L]inks of current file' })
-vim.keymap.set('n', '<leader>on', '<cmd>ObsidianNewFromTemplate Note<cr><cmd>w<cr>', { desc = '[O]bsidian: [N]ew note from template' })
+vim.keymap.set('n', '<leader>on', '<cmd>ObsidianTemplate Note<cr>', { desc = '[O]bsidian: [N]ew note from template' })
+vim.keymap.set('n', '<leader>om', 'gg<cmd>ObsidianTemplate link<cr>', { desc = '[O]bsidian: [N]ew note from template' })
 vim.keymap.set('n', '<leader>ot', '<cmd>ObsidianTemplate<cr>', { desc = '[O]bsidian: Insert [T]emplate' })
 vim.keymap.set('n', '<leader>odd', ':w<cr>:!rm "%:p"<cr>:bd<cr>', { desc = '[O]bsidian: [D]elete note', silent = true })
